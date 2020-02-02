@@ -18,6 +18,7 @@ def getdescription(tweets):
 
 
 if __name__ == '__main__':
+  getpicture.get_all_tweets(input('input id'))
 #get tweets
   tweets = []
   with open('tweet.json') as file:
