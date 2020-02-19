@@ -1,7 +1,6 @@
 api-design-szyszy315
 ----
 first clone this git repository<br>
---
 git clone https://github.com/BUEC500C1/api-design-szyszy315.git <br>
 then set your tweet api account in this format in a file called twitter_credentials.py<br>
 CONSUMER_KEY = ""<br>
