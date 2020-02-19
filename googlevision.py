@@ -1,8 +1,11 @@
-import getpicture
+import pyy
 import json
 from google.cloud import vision
 
-def getdescription(tweets):
+def getdescription():
+  tweets = []
+  with open('tweet.json') as file:
+    tweets = json.load(file)
   image_uri = tweets
   for i in image_uri:
     client = vision.ImageAnnotatorClient()
@@ -15,12 +18,3 @@ def getdescription(tweets):
     print('=' * 79)
     for label in response.label_annotations:
       print(f'{label.description} ({label.score*100.:.2f}%)')
-
-
-if __name__ == '__main__':
-  getpicture.get_all_tweets(input('input id'))
-#get tweets
-  tweets = []
-  with open('tweet.json') as file:
-    tweets = json.load(file)
-  getdescription(tweets)
