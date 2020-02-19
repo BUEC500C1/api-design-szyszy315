@@ -30,7 +30,3 @@ def get_all_tweets(screen_name):
     json.dump(tweets_ranking,file,indent = 4)
     print ("Done")
     file.close()
-
-if __name__ == '__main__':
-    #pass in the username of the account you want to download
-    get_all_tweets(input('input the id'))
