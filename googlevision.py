@@ -16,5 +16,5 @@ def getdescription():
 
     print('Labels (and confidence score):')
     print('=' * 79)
-    for label in response.label_annotations:
-      print(f'{label.description} ({label.score*100.:.2f}%)')
+  for label in response.label_annotations:
+    print(f'{label.description} ({label.score*100.:.2f}%)')
