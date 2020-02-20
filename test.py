@@ -1,7 +1,7 @@
 import json
-import ppy
+import pyy
 
-def test():
+def testcontentofjson():
   tweets = []
   with open('tweet.json') as file:
     tweets = json.load(file)
@@ -12,10 +12,10 @@ def test():
     else:
       print('error')
       return
-  print("all done")
+  print("content of tweets is right")
 
-def content():
-  aa = ppy("@BU_Tweets")
+def testtweetapi():
+  aa = pyy.get_all_tweets("@BU_Tweets")
   if len(aa) == 0:
     print("error")
     return
@@ -23,5 +23,5 @@ def content():
 
 
 if __name__ == '__main__':
-  test()
-  content();
+  testcontentofjson()
+  testtweetapi()
