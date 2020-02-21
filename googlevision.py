@@ -2,7 +2,7 @@ import pyy
 import json
 from google.cloud import vision
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="ec500hw1-7326abd803ac.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="google.json"
 
 def getdescription():
   tweets = []
