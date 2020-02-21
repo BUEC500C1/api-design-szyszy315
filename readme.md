@@ -3,7 +3,7 @@
 
 ## 1.clone this repository<br>
 ```
-git clone https://github.com/BUEC500C1/api-design-szyszy315.git<br>
+git clone https://github.com/BUEC500C1/api-design-szyszy315.git
 ```
 ## 2.set the twitter credential<br>
 creat a file called twitter_credentials.py. The content should have 
