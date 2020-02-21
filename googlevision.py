@@ -1,6 +1,8 @@
 import pyy
 import json
 from google.cloud import vision
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="ec500hw1-7326abd803ac.json"
 
 def getdescription():
   tweets = []
@@ -14,7 +16,9 @@ def getdescription():
 
     response = client.label_detection(image=image)
 
-    print('Labels (and confidence score):')
-    print('=' * 79)
+  print('Labels (and confidence score):')
+  print('=' * 79)
   for label in response.label_annotations:
     print(f'{label.description} ({label.score*100.:.2f}%)')
+  return len(response.label_annotations)
+
