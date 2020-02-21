@@ -3,12 +3,12 @@
 
 import tweepy
 import json
-import twitter_credentials
+import keys
 
 def get_all_tweets(screen_name):
 #Twitter API credentials
-    auth = tweepy.OAuthHandler(twitter_credentials.CONSUMER_KEY, twitter_credentials.CONSUMER_SECRET)
-    auth.set_access_token(twitter_credentials.ACCESS_TOKEN, twitter_credentials.ACCESS_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(keys.CONSUMER_KEY, keys.CONSUMER_SECRET)
+    auth.set_access_token(keys.ACCESS_TOKEN, keys.ACCESS_TOKEN_SECRET)
     api = tweepy.API(auth)
 
     alltweets = {}
@@ -23,10 +23,10 @@ def get_all_tweets(screen_name):
                 print ("...{} tweets downloaded so far".format(len(alltweets)))
     tweets_ranking=sorted(alltweets ,key = lambda x : alltweets[x])
 
-
     #write tweet objects to JSON
     file = open('tweet.json', 'w')
     print ("Writing tweet objects to JSON please wait...")
     json.dump(tweets_ranking,file,indent = 4)
     print ("Done")
     file.close()
+    return tweets_ranking
