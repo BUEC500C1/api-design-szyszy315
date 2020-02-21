@@ -14,7 +14,7 @@ ACCESS_TOKEN = ""
 ACCESS_TOKEN_SECRET = ""
 ```
 ## 3.set the google vision api credential 
-Set the credentials according to https://cloud.google.com/docs/authentication/getting-started.
+Set the credentials according to https://cloud.google.com/docs/authentication/getting-started. Change the name of google credential as google.json in the same directory.
 ## 4.Then you can run imageapi.py<br>
 ```
 python imageapi.py
