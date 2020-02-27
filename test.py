@@ -1,8 +1,9 @@
 import json
 import pyy
 import googlevision
+import pytest
 
-def testcontentofjson():
+def test_contentofjson():
   tweets = []
   with open('tweet.json') as file:
     tweets = json.load(file)
@@ -15,14 +16,14 @@ def testcontentofjson():
       return
   print("content of tweets is right")
 
-def testtweetapi():
+def test_tweetapi():
   aa = pyy.get_all_tweets("@BU_Tweets")
   if len(aa) == 0:
     print("error:twitterapi")
     return
   print("twitter api works")
 
-def testgooglevision():
+def test_googlevision():
   l = googlevision.getdescription()
   if (l == 0):
     print("error: googlevision")
@@ -30,7 +31,3 @@ def testgooglevision():
     print("googlevision works")
 
 
-if __name__ == '__main__':
-  testcontentofjson()
-  testtweetapi()
-  testgooglevision()
