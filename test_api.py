@@ -23,14 +23,14 @@ def testtweetapi():
     return
   print("twitter api works")
 
-def testgooglevision():
-  l = googlevision.getdescription()
-  if (l == 0):
-    print("error: googlevision")
-  else:
-    print("googlevision works")
+# def testgooglevision():
+#   l = googlevision.getdescription()
+#   if (l == 0):
+#     print("error: googlevision")
+#   else:
+#     print("googlevision works")
 
 def test_api():
   testcontentofjson()
   testtweetapi()
-  testgooglevision()
+#   testgooglevision()
