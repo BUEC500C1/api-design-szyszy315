@@ -2,7 +2,7 @@ import pyy
 import json
 from google.cloud import vision
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="google.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="ec500hw1-7326abd803ac.json"
 
 def getdescription():
   tweets = []
@@ -21,4 +21,3 @@ def getdescription():
   for label in response.label_annotations:
     print(f'{label.description} ({label.score*100.:.2f}%)')
   return len(response.label_annotations)
-
