@@ -1,2 +1,3 @@
 tweepy
 google-cloud-storage
+google-cloud-vision
