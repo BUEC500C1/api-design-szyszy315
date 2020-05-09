@@ -1,6 +1,8 @@
 # api-design-szyszy315
 ## introduction
-this project integrate twippy with google natural language api to analysize images from a user's twitter. you can specify the user name and get the output in terminal.
+this project integrate twippy with google vision api to analysize images from a user's twitter. you can specify the user name and get the output in terminal.
+
+Use twippy to extract tweets with images and store all the images in a json file. Then take the json file as input of google vision api to process all the images and show the results.
 
 ## way to run this project
 ### 1.clone this repository<br>
