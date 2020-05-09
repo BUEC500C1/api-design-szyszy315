@@ -3,6 +3,7 @@ import pyy
 import googlevision
 import pytest
 
+#test if the content of json file in right format
 def testcontentofjson():
   tweets = []
   with open('tweet.json') as file:
@@ -16,6 +17,7 @@ def testcontentofjson():
       return
   print("content of tweets is right")
 
+  #test if get images from twitter
 def testtweetapi():
   aa = pyy.get_all_tweets("@BU_Tweets")
   if len(aa) == 0:
@@ -23,6 +25,7 @@ def testtweetapi():
     return
   print("twitter api works")
 
+  #test output of google vision
 def testgooglevision():
   l = googlevision.getdescription()
   if (l == 0):
