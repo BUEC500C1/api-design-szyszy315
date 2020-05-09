@@ -1,11 +1,13 @@
 # api-design-szyszy315
-## used api
+## introduction
 this project integrate twippy with google natural language api to analysize images from a user's twitter. you can specify the user name and get the output in terminal.
-## 1.clone this repository<br>
+
+## way to run this project
+### 1.clone this repository<br>
 ```
 git clone https://github.com/BUEC500C1/api-design-szyszy315.git
 ```
-## 2.set the twitter credential<br>
+### 2.set the twitter credential<br>
 creat a file called twitter_credentials.py. The content should have 
 ```
 CONSUMER_KEY = ""
@@ -13,9 +15,9 @@ CONSUMER_SECRET = ""
 ACCESS_TOKEN = ""
 ACCESS_TOKEN_SECRET = ""
 ```
-## 3.set the google vision api credential 
+### 3.set the google vision api credential 
 Set the credentials according to https://cloud.google.com/docs/authentication/getting-started. Change the name of google credential as google.json in the same directory.
-## 4.Then you can run imageapi.py<br>
+### 4.Then you can run imageapi.py<br>
 ```
 python imageapi.py
 ```
