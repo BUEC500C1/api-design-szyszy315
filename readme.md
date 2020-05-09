@@ -3,6 +3,8 @@
 this project integrate twippy with google vision api to analysize images from a user's twitter. you can specify the user name and get the output in terminal.
 
 Use twippy to extract tweets with images and store all the images in a json file. Then take the json file as input of google vision api to process all the images and show the results.
+## User story
+as a twitter user sometimes i want to analysize some user's twitter especially the one with images to get to know their habits.
 
 ## way to run this project
 ### 1.clone this repository<br>
