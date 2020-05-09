@@ -11,6 +11,10 @@ as a twitter user sometimes i want to analysize some user's twitter especially t
 ```
 git clone https://github.com/BUEC500C1/api-design-szyszy315.git
 ```
+install requirments
+```
+pip3 install -r requirements.txt
+```
 ### 2.set the twitter credential<br>
 creat a file called twitter_credentials.py. The content should have 
 ```
