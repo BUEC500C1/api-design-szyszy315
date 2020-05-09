@@ -1,6 +1,6 @@
 # api-design-szyszy315
-
-
+## used api
+this project integrate twippy with google natural language api to analysize images from a user's twitter. you can specify the user name and get the output in terminal.
 ## 1.clone this repository<br>
 ```
 git clone https://github.com/BUEC500C1/api-design-szyszy315.git
